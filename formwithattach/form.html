@@ -1,0 +1,30 @@
+<div style="display: none;">
+	<div id="gettender" class="popup-form">
+		<div class="popup-form__wrapper">
+			<div class="popup-form__close arcticmodal-close modal-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="popup-form__head">Участвовать в тендере</div>
+			<div class="popup-form__subtext">Оставьте заявку на участие в тендере</div>
+			<div id="contact_results"></div>
+			<form id="contact_body" method="post" action="file-sender.php">
+				<div class="form-free-consult__input">
+					<label for="name">Имя</label>
+					<input type="text" name="name" data-required="true" placeholder="Ваше имя"/>
+				</div>
+				<div class="form-free-consult__input">
+					<label for="phone">Телефон</label>
+					<input type="text" name="phone2" maxlength="35" class="phone-mask" placeholder="Ваш телефон"/>
+				</div>
+				<div class="form-free-consult__input">
+					<label for="email">Email</label>
+					<input type="email" name="email" data-required="true" placeholder="Ваш Email"/>
+				</div>
+				<div class="form-free-consult__input">
+					<label for="email">Файл</label>
+					<div class="attachfile-field">Прикрепить файл</div>
+					<input type="file" class="inputfile" name="file_attach[]"  />
+				</div>
+				<button class="form-free-consult__btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+</div>
