@@ -1,6 +1,6 @@
 <?php
-$recipient_email    = "beg431@yandex.ru"; //recepient
-$from_email         = "no-reply@gcbarior.ru"; //from email using site domain.
+$recipient_email    = "recipient_email@mail.ru"; //recepient
+$from_email         = "no-reply@sitename.ru"; //from email using site domain.
 
 
 if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -13,7 +13,7 @@ if($_POST){
     $sender_email   = filter_var($_POST["email"], FILTER_SANITIZE_STRING); //capture sender email
     //$country_code   = filter_var($_POST["phone1"], FILTER_SANITIZE_NUMBER_INT);
     $phone_number   = filter_var($_POST["phone2"], FILTER_SANITIZE_NUMBER_INT);
-    $subject        = 'Заявка с сайта gcbarior.ru / Участие в тендере';
+    $subject        = 'Suject';
     $message        = 'Имя ' . $sender_name . ' Телефон ' . $phone_number . ' Email ' . $sender_email; //capture message
 
     $attachments = $_FILES['file_attach'];
@@ -108,7 +108,7 @@ if($_POST){
     $sentMail = mail($recipient_email, $subject, $body, $headers);
     if($sentMail) //output success or failure messages
     {       
-        print json_encode(array('type'=>'done', 'text' => 'Письмо успешно отправленно! Спасибо за участие!'));
+        print json_encode(array('type'=>'done', 'text' => 'Письмо успешно отправленно!'));
         exit;
     }else{
         print json_encode(array('type'=>'error', 'text' => 'Ошибка! Письмо не может быть отправленно!'));  
