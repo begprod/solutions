@@ -1,12 +1,14 @@
-.tabs-menu-wrp {}
+.b-tabs {
+	width: 100%;
+}
 
-.tabs-menu-wrp__menu {
+.b-tabs__menu {
 	height: 30px;
 	float: left;
 	clear: both;
 }
 
-.tabs-menu-wrp__item {
+.b-tabs-menu__item {
 	height: 30px;
 	line-height: 30px;
 	float: left;
@@ -17,25 +19,25 @@
 	border-left: 1px solid #d4d4d1;
 }
 
-.tabs-menu-wrp__item a {
+.b-tabs-menu__link {
 	padding: 10px;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
 }
 
-.tabs-menu-wrp__item--active {
+.b-tabs-menu__item--active {
 	position: relative;
 	background-color: #fff;
 	border-bottom: 1px solid #fff;
 	z-index: 5;
 }
 
-.tabs-menu-wrp__item--active a {
+.b-tabs__menu-item--active .b-tabs-menu__link {
 	color: #2e7da3;
 }
 
-.tab-content {
+.b-tab__content {
 	border: 1px solid #d4d4d1;
 	background-color: #fff;
 	float: left;
