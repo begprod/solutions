@@ -23,7 +23,7 @@ jQuery(function () {
 	jQuery('.call-back-form__close').on('click', function () {
 		jQuery('.call-back-wrapper').fadeOut(300);
 		jQuery('.b-callback-btn').fadeIn(300);
-		//сбросить
+		//reset
 		clearInterval(counter);
 		count = initial;
 		displayCount(count);
@@ -34,6 +34,6 @@ jQuery(function () {
 	});
 
 	displayCount(initial);
-	//стоп
+	//stop
 	clearInterval(counter);
 });
