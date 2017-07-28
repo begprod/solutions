@@ -1,0 +1,152 @@
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 900px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 14px;
+    background: #8E24AA;
+    background: -webkit-linear-gradient(-45deg, #8E24AA 0%,#C2185B 100%);
+    background: -webkit-linear-gradient(315deg, #8E24AA 0%,#C2185B 100%);
+    background: -o-linear-gradient(315deg, #8E24AA 0%,#C2185B 100%);
+    background: linear-gradient(135deg, #8E24AA 0%,#C2185B 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8E24AA', endColorstr='#C2185B',GradientType=1 );
+    background-size: cover;
+    overflow: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 450px;
+    height: 550px;
+    background-color: #feea3a;
+    -webkit-box-shadow: 0 0 3px black;
+            box-shadow: 0 0 3px black;
+}
+.wrapper__head {
+    margin: 0 0 40px 0;
+}
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 370px;
+    height: 270px;
+    margin-right: -70px;
+    padding: 50px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 7px black;
+            box-shadow: 0 0 7px black;
+}
+.form__input-wrapper {
+    margin-bottom: 30px;
+    min-width: 350px;
+}
+.form__input-label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: lightgray;
+}
+.form__input {
+    width: 100%;
+    min-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    border: 0;
+    outline: 1px solid lightgray;
+}
+.form__input:focus {
+    outline: none;
+}
+.form__btn {
+    background: none;
+    color: gray;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+}
+.form__btn:hover {
+    color: black;
+}
+.attachfile-field {
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: #C2185B;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.attachfile-field:hover {
+    -webkit-box-shadow: 0 0 1px black;
+            box-shadow: 0 0 1px black;
+}
+.filename {
+    display: block;
+    margin: 5px auto;
+    font-size: 12px;
+    text-align: center;
+    color: lightgray;
+}

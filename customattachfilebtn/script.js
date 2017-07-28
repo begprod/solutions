@@ -1,7 +1,14 @@
-$('.attachfile-field').click(function() {
-	$('.inputfile').click();
+$(document).ready(function() {
+	attachFile();
 });
-$('.inputfile').change(function() {
-	var filename = $('.inputfile').val().replace(/C:\\fakepath\\/i, '');
-	$('.attachfile-field').append(filename);
-});
+
+function attachFile() {
+	$('.attachfile-field').click(function(e) {
+		$('.inputfile').click();
+		return false;
+	});
+	$('.inputfile').change(function() {
+		var filename = $('.inputfile').val().replace(/C:\\fakepath\\/i, '');
+		$('.filename').html(filename);
+	});
+}

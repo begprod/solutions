@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <title>Custom attachfile field</title>
+    <!-- My styles -->
+    <link rel="stylesheet" href="../vendors/Normalaze.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1 class="wrapper__head">Custom attachment field</h1>
+        <form class="form" action="#">
+            <div class="form__input-wrapper">
+                <label class="form__input-label" for="name">Name</label>
+                <input class="form__input" type="text" name="name" value="" placeholder="Name">
+            </div>
+            <div class="form__input-wrapper">
+                <label class="form__input-label" for="email">Email</label>
+                <input class="form__input" type="text" name="email" value="" placeholder="Email">
+            </div>
+            <div class="form__input-wrapper">
+                <input class="form__input inputfile visuallyhidden" type="file" name="file" value="">
+                <div class="attachfile-field">File upload</div>
+                <span class="filename">File name: </span>
+            </div>
+            <button class="form__btn" type="submit" name="button">Send</button>
+        </form>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
