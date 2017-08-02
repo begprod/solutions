@@ -2,8 +2,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #0093E9;
 	background-image: -webkit-linear-gradient(135deg, #0093E9 0%, #bb76de 100%);
-	background-image: -moz-linear-gradient(135deg, #0093E9 0%, #bb76de 100%);
 	background-image: -o-linear-gradient(135deg, #0093E9 0%, #bb76de 100%);
+	background-image: -webkit-linear-gradient(315deg, #0093E9 0%, #bb76de 100%);
+	background-image: -o-linear-gradient(315deg, #0093E9 0%, #bb76de 100%);
 	background-image: linear-gradient(135deg, #0093E9 0%, #bb76de 100%);
 	height: 100vh;
 }
@@ -24,7 +25,8 @@ body {
 	margin: 0 auto;
 	padding: 50px 20px;
 	background-color: #f4f4f4;
-	box-shadow: 0 0 3px black;
+	-webkit-box-shadow: 0 0 3px black;
+	        box-shadow: 0 0 3px black;
 }
 
 /* 1 */
@@ -46,6 +48,8 @@ input[type="checkbox"] + label {
 	color: gray;
 	text-transform: capitalize;
 	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
 input[type="checkbox"] + label:hover {
@@ -63,6 +67,8 @@ input[type="checkbox"] + label::after {
 	margin-top: -15px;
 	font-size: 20px;
 	text-align: center;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	border: 2px solid gray;
 	border-radius: 5px;
