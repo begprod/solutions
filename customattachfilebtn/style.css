@@ -23,7 +23,8 @@ body {
     background: -o-linear-gradient(315deg, #8E24AA 0%,#C2185B 100%);
     background: linear-gradient(135deg, #8E24AA 0%,#C2185B 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8E24AA', endColorstr='#C2185B',GradientType=1 );
-    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
     overflow: hidden;
 }
 .visuallyhidden {
