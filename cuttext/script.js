@@ -1,8 +1,14 @@
-$('.owl-item__head').each(function() {
-	var headText = $(this).text();
-	var headTextLen = headText.length;
-	var cutNum = 60;
-	if (headTextLen >= cutNum) {
-		$(this).val(headText).text(headText.substr(0, cutNum) + '…');
-	}
+$(document).ready(function () {
+	cutText('.card', 300);
 });
+
+function cutText(className, numOfChars) {
+	$(className).each(function() {
+		var text = $(this).text();
+		var textSize = text.length;
+		
+		if(textSize >= numOfChars) {
+			$(this).val(text).text(text.substr(0, numOfChars) + '…');
+		}
+	});
+}
